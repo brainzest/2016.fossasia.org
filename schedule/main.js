@@ -132,8 +132,7 @@
       if (params.speakers.length > 0) setContent('.session-speakers', speakers.join(', '))
       else hide('.session-speakers-cell')
 
-      if (params.type) setContent('.session-type', params.type)
-      else hide('.session-type-cell')
+      setContent('.session-type', params.type)
 
       return elem
     }
